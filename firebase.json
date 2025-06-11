@@ -1,0 +1,38 @@
+{
+   "hosting": {
+    "public": "public",
+    "headers": [
+      {
+        "source": "/apple-app-site-association",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      },
+      {
+        "source": "/.well-known/apple-app-site-association",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      }
+    ],
+    "rewrites": [],
+    "redirects": [
+      {
+        "source": "/tcb",
+        "destination": "https://apps.apple.com/us/app/techcombank-mobile/id1548623362",
+        "type": 302
+      },
+      {
+        "source": "/hdb",
+        "destination": "https://apps.apple.com/vn/app/hdbank/id1461658565",
+        "type": 302
+      }
+    ]
+  }
+}
